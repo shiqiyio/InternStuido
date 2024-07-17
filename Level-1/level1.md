@@ -14,7 +14,9 @@
 
 * 创建conda环境运行helloword.py
 
-   <img src="conda.png" alt="image-20240717111724418"   style="zoom:50%;"  /> 
+   
+
+  <img src="conda.png" alt="image-20240717111724418"     /> 
 
     <img src="helloworld.png" alt="image-20240717111558983" style="zoom:50%;" />
 
