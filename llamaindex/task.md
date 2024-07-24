@@ -16,6 +16,6 @@
 
 ![image-20240723234741156](whoareyou.png)
 
-* **xtuner支持那些模型？以及xtuner是啥**截图
+* **xtuner支持那些模型？以及xtuner是啥截图**
 
 ![image-20240723234741156](qa.png)
