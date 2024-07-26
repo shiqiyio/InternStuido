@@ -1,13 +1,12 @@
 # RAG实战任务结果
 
-* **环境的安装**
+* **使用 Cli Demo 完成，300小故事**
 
-  ![image-20240723231630872](env_process.png)
+  
 
-* **使用xtuner之前**
 
-​				![image-20240723233916455](before_tuner.png)
+![image-20240726195607468](cli_story.png)
 
-* **使用xtuner之后**
+* **使用 streamlit实现，300小故事**
 
-![image-20240725130526514](xtuner.png)
+![image-20240726201338047](streamlit.png)
