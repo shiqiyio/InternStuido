@@ -25,3 +25,4 @@
 📜 官方认证：优秀学员将获得荣誉证书，优秀项目有机会被官方收录，获得更多展示  
 
 资源： [GitHub 仓库](https://github.com/InternLM/Tutorial)（https://github.com/InternLM/Tutorial）
+资料：[课程任务](https://github.com/InternLM/Tutorial/tree/camp3/docs)
