@@ -4,11 +4,11 @@
 
 **使用结合W4A16量化与kv cache量化的`internlm2_5-7b-chat`模型封装本地API并与大模型进行一次对话**:
 
-![image-20240819175711221](.\image-20240819175711221.png)
+![image-20240819175711221](./image-20240819175711221.png)
 
 **使用Function call功能让大模型完成一次简单的"加"与"乘"函数调用**
 
-![image-20240819203115970](.\image-20240819203115970.png)
+![image-20240819203115970](./image-20240819203115970.png)
 
 我们可以看出InternLM2.5将输入`'Compute (3+5)*2'`根据提供的function拆分成了"加"和"乘"两步，第一步调用`function add`实现加，再于第二步调用`function mul`实现乘，再最终输出结果16.
 
@@ -32,7 +32,7 @@ ln -s /root/share/new_models/OpenGVLab/InternVL2-26B /root/models
 
 激活`langgpt`环境：
 
-![image-20240819145706239](.\image-20240819145706239.png)
+![image-20240819145706239](./image-20240819145706239.png)
 
 ## 1.3 LMDeploy验证启动模型文件
 
@@ -51,7 +51,7 @@ lmdeploy chat /root/models/internlm2_5-7b-chat
 
 此时，我们可以在CLI(“命令行界面” Command Line Interface的缩写)中和InternLM2.5尽情对话了，注意输入内容完成后需要按**两次回车**才能够执行，以下为示例。
 
-![image-20240819145605373](.\image-20240819145605373.png)
+![image-20240819145605373](./image-20240819145605373.png)
 
 ##  2.1 LMDeploy API部署InternLM2.5
 
@@ -84,7 +84,7 @@ lmdeploy serve api_server \
 
 使用vscode进行端口转发，之后打开浏览器，访问`http://127.0.0.1:23333`看到如下界面即代表部署成功。
 
-![image-20240819152505384](.\image-20240819152505384.png)
+![image-20240819152505384](./image-20240819152505384.png)
 
 ### <a id="2.1.2"> 2.1.2 以命令行形式连接API服务器 </a>
 
@@ -99,7 +99,7 @@ lmdeploy serve api_client http://localhost:23333
 
 稍待片刻，等出现`double enter to end input >>>`的输入提示即启动成功，此时便可以随意与InternLM2.5对话，同样是两下回车确定，输入`exit`退出。
 
-![image-20240819151015077](.\image-20240819151015077.png)
+![image-20240819151015077](./image-20240819151015077.png)
 
 ### <a id="2.1.3"> 2.1.3 以Gradio**网页形式连接API服务器**</a>
 
@@ -115,7 +115,7 @@ lmdeploy serve gradio http://localhost:23333 \
 
 稍待片刻，等终端如下图所示便保持两个终端不动。
 
-![image-20240819151034428](.\image-20240819151034428.png)
+![image-20240819151034428](./image-20240819151034428.png)
 
 关闭之前的cmd/powershell窗口，重开一个，再次做一下ssh转发(因为此时端口不同)。在你本地打开一个cmd或powershell窗口，输入命令如下。
 
@@ -129,7 +129,7 @@ ssh -CNg -L 6006:127.0.0.1:6006 root@ssh.intern-ai.org.cn -p <你的ssh端口号
 
 打开浏览器，访问地址`http://127.0.0.1:6006`，然后就可以与模型尽情对话了。
 
-![image-20240819152125525](.\image-20240819152125525.png)
+![image-20240819152125525](./image-20240819152125525.png)
 
 ## 2.2 LMDeploy Lite
 
@@ -210,7 +210,7 @@ lmdeploy serve api_server \
 
 调用效果：
 
-![image-20240819175711221](.\image-20240819175711221.png)
+![image-20240819175711221](./image-20240819175711221.png)
 
 
 
@@ -344,6 +344,6 @@ python /root/internlm2_5_func.py
 
 稍待片刻终端输出如下。
 
-![image-20240819203115970](.\image-20240819203115970.png)
+![image-20240819203115970](./image-20240819203115970.png)
 
 我们可以看出InternLM2.5将输入`'Compute (3+5)*2'`根据提供的function拆分成了"加"和"乘"两步，第一步调用`function add`实现加，再于第二步调用`function mul`实现乘，再最终输出结果16.
