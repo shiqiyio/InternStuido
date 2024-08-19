@@ -113,21 +113,7 @@ lmdeploy serve gradio http://localhost:23333 \
     --server-port 6006
 ```
 
-稍待片刻，等终端如下图所示便保持两个终端不动。
-
-![image-20240819151034428](./image-20240819151034428.png)
-
-关闭之前的cmd/powershell窗口，重开一个，再次做一下ssh转发(因为此时端口不同)。在你本地打开一个cmd或powershell窗口，输入命令如下。
-
-```Python
-ssh -CNg -L 6006:127.0.0.1:6006 root@ssh.intern-ai.org.cn -p <你的ssh端口号>
-```
-
-重复上述操作，待窗口保持在如下状态即可。
-
-![img](https://raw.githubusercontent.com/BigWhiteFox/pictures/main/17.png)
-
-打开浏览器，访问地址`http://127.0.0.1:6006`，然后就可以与模型尽情对话了。
+通过vscode进行端口转发，即可访问地址`http://127.0.0.1:6006`，与模型尽情对话了。
 
 ![image-20240819152125525](./image-20240819152125525.png)
 
