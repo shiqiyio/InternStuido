@@ -215,15 +215,15 @@ python3 -m huixiangdou.gradio
 
 现在就可以用页面测试一下茴香豆的交互效果了。
 
-## 1.4 （待做）集成飞书&微信群聊
+## 1.4 （已做）微信群聊
 
 本地版茴香豆的群集成和 Web 版一样，需要有公网 IP 的服务器，微信仅支持特定 Android 版本。
 
-飞书集成：
+注册服务，获取接口
 
-* `pip install -r requirements-lark-group.txt`
+![image-20240826163358980](./image-20240826163358980.png)
 
-* 教程 https://github.com/InternLM/HuixiangDou/blob/main/docs/add_lark_group_zh.md
+![image-20240826163338527](./image-20240826163338527.png)
 
 # 2 茴香豆高阶应用（待完成）
 
