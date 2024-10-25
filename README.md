@@ -1,12 +1,6 @@
-# InternStuido
+# InternStudio
 
-
-## level1 [第一关的笔记](https://github.com/shiqiyio/InternStuido/blob/main/Level-1/level1.md)
-## level2 [第二关的笔记](https://github.com/shiqiyio/InternStuido/blob/main/Level-2/level2.md)
-## level3 [第三关的笔记](https://github.com/shiqiyio/InternStuido/blob/main/Level-3/level3.md)
-## llamaindex [RAG的笔记](https://github.com/shiqiyio/InternStuido/blob/main/llamaindex/task.md)
-## Xtuner [xtuner](https://github.com/shiqiyio/InternStuido/blob/main/xtuner/task.md)
-## 8G完整大模型 [8G](https://github.com/shiqiyio/InternStuido/blob/main/use8G/task.md)
+## 
 
 ***
 
